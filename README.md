@@ -1,3 +1,2 @@
 # css-images
-Day 1: Koala and Diamond.<br>
-Day 2:
+Day 1: Koala, Diamond, Crystal Loader and Nintendo Switch <br>
