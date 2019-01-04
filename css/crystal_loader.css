@@ -1,0 +1,107 @@
+:root{
+  --dark-sky-blue: #6AC0D6;
+  --blue-lagoon: #B2E4F6;
+  --pale-cyan: #89E5F6;
+  --rich-black: #010F19;
+  --dark-cerulean: #08517A;
+}
+
+
+
+
+body{
+  background: var(--rich-black);
+}
+
+.box{
+  position: relative;
+  height: 400px;
+  width: 600px;
+  border: none;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+}
+
+.line-1{
+  position: absolute;
+  background: var(--dark-sky-blue);
+  height: 50%;
+  bottom: 25%;
+  width: 5%;
+  left: 45%;
+  z-index: 1;
+}
+
+.line-2{
+  position: absolute;
+  background: var(--pale-cyan);
+  height: 50%;
+  bottom: 25%;
+  width: 5%;
+  left: 50%;
+  z-index: 1;
+}
+
+.triangle{
+  position: absolute;
+  height: 40%;
+  width: 200%;
+  top: -20%;
+  left: -100%;
+  background: var(--dark-cerulean);
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  z-index: 2;
+}
+
+.triangle-sm{
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  top: -15%;
+  left: -0%;
+  background: var(--dark-sky-blue);
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  z-index: 2;
+}
+
+.shine{
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  top: 90%;
+  background: var(--blue-lagoon);
+  z-index: 3;
+  animation: shine 1s infinite;
+}
+
+
+.line-3{
+  position: absolute;
+  background: var(--pale-cyan);
+  height: 30%;
+  bottom: 25%;
+  width: 5%;
+  left: 40%;
+  z-index: 1;
+}
+
+.line-4{
+  position: absolute;
+  background: var(--dark-cerulean);
+  height: 35%;
+  bottom: 25%;
+  width: 5%;
+  left: 55%;
+  z-index: 1;
+}
+@keyframes shine {
+  0%{
+    top: 90%; /*na samom dnu*/
+  }
+  100%{
+    top: 0%;
+  }
+}

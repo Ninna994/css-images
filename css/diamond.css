@@ -19,7 +19,7 @@ body{
   display: block;
   margin: auto;
   margin-top: 8%;
-  height: 400px;
+  height: 400px; 
   width: 600px;
   border: 2px solid red;
 }

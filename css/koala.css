@@ -45,6 +45,9 @@ body{
   border-radius: 50%;
   background: var(--light_grey);
   z-index: 1;
+  /* animation: spinMe 3s infinite; */
+  animation: dragLeft 3s 3;
+
 }
 .ear-right{
   position: absolute;
@@ -55,6 +58,9 @@ body{
   border-radius: 50%;
   background: var(--light_grey);
   z-index: 1;
+  /*animations koja koliko sek koliko iteracija*/
+  /* animation: spinMe 3s infinite; */
+  animation: dragRight 3s 3;
 }
 .inner-ear{
   position: absolute;
@@ -64,6 +70,7 @@ body{
   height: 80%;
   background: var(--dark_grey);
   border-radius: 50%;
+
 }
 .eye-left{
   position: absolute;
@@ -121,4 +128,33 @@ body{
   left: 48%;
   top: -4%;
   clip-path: var(--triangle);
+}
+/*CSS animations*/
+@keyframes spinMe {
+  0%{
+    transform: rotate(0deg);
+    /*change colors*/
+    background: var(--light_grey);
+  }
+  100%{
+    transform: rotate(360deg);
+    /*change colors*/
+    background: var(--dark_grey);
+  }
+}
+@keyframes dragRight {
+  0%{
+    right: -80%;
+  }
+  100%{
+    right: -20%;
+  }
+}
+@keyframes dragLeft {
+  0%{
+    left: -80%;
+  }
+  100%{
+    left: -20%;
+  }
 }

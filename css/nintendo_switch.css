@@ -1,0 +1,258 @@
+:root{
+  --crvena: #E70012;
+  --siva: #7C898B;
+  --okvir: #39393A;
+  --crna: #0D090A;
+  --pozadina: #9EEFE5 ;
+  --plava: #02C5E5;
+  --red: #FF594D;
+}
+body{
+  background: var(--pozadina);
+
+}
+div{
+  color: white;
+  text-align: center;
+}
+h1{
+  text-align: center;
+  color: var(--okvir);
+  text-transform: capitalize;
+}
+i{
+  color: var(--siva);
+}
+.box{
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 8%;
+  height: 400px;
+  width: 600px;
+}
+.switch-container{
+  position: absolute;
+  width: 80%;
+  height: 60%;
+  top: 20%;
+  left: 10%;
+}
+.joy-left{
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  background-color: var(--plava);
+  border-radius: 20px 0 0 20px;
+}
+.joy-right{
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  right:0;
+  background-color: var(--red);
+  border-radius: 0 20px 20px 0;
+}
+.ekran-spolja{
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  left: 15%;
+  background-color: var(--okvir);
+}
+.ekran-unutra{
+  position: absolute;
+  width: 94%;
+  height: 94%;
+  top: 3%;
+  left: 3%;
+  background-color: var(--crna);
+  border-radius: 12px;
+}
+.ekran{
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background-color: var(--crvena);
+  top: 5%;
+  left: 5%;
+}
+.minus{
+  position: absolute;
+  height: 3%;
+  width: 30%;
+  background-color: var(--crna);
+  border-radius: 5px;
+  right: 2%;
+  top: 7%;
+}
+.analog-levi{
+  position: absolute;
+  width: 50%;
+  height: 15%;
+  border-radius: 50%;
+  border: 3px solid var(--okvir);
+  background-color: var(--crna);
+  left: 25%;
+  top: 20%;
+}
+.dugmici-levo{
+  position: absolute;
+  width: 85%;
+  height: 25%;
+  left: 7.5%;
+  top: 47%;
+}
+.dugmici-desno{
+  position: absolute;
+  width: 85%;
+  height: 25%;
+  left: 7.5%;
+  top: 20%;
+}
+.gore{
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  background-color: var(--crna);
+  top: 1%;
+  left: 35%;
+  border-radius: 50%;
+}
+.dole{
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  background-color: var(--crna);
+  bottom: 1%;
+  left: 35%;
+  border-radius: 50%;
+}
+.levo{
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  background-color: var(--crna);
+  top: 35%;
+  left: 1%;
+  border-radius: 50%;
+}
+.desno{
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  background-color: var(--crna);
+  top: 35%;
+  right: 1%;
+  border-radius: 50%;
+}
+.kocka{
+  position: absolute;
+  width: 25%;
+  height: 7%;
+  bottom: 10%;
+  right: 5%;
+  background-color: var(--crna);
+}
+.plus{
+  position: absolute;
+  height: 10%;
+  width: 30%;
+  left: 5%;
+  top: 3%;
+}
+.minus-vertikalno{
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  left: 37.5%;
+  background: var(--crna);
+}
+.minus-horizontalno{
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  top: 37.5%;
+  background: var(--crna);
+}
+.analog-desni{
+  position: absolute;
+  width: 50%;
+  height: 15%;
+  border-radius: 50%;
+  border: 3px solid var(--okvir);
+  background-color: var(--crna);
+  left: 25%;
+  top: 55%;
+}
+.kruzic{
+  position: absolute;
+  width: 20%;
+  height: 5%;
+  bottom: 10%;
+  left: 5%;
+  background-color: var(--crna);
+  border-radius: 50%;
+  border: 3px solid var(--okvir);
+}
+.logo-levo{
+  position:absolute;
+  height: 65%;
+  width: 20%;
+  border: 7px solid white;
+  top: 17.5%;
+  left: 20%;
+  border-radius: 25px 0 0 25px;
+}
+.logo-desno{
+  position:absolute;
+  height: 65%;
+  width: 20%;
+  border: 7px solid white;
+  background-color: white;
+  top: 17.5%;
+  right: 20%;
+  border-radius: 0 25px 25px 0;
+}
+.logo-lopta-levo{
+  position: absolute;
+  background-color: white;
+  width:60%;
+  height: 25%;
+  left: 20%;
+  top: 10%;
+  border-radius: 50%;
+  animation: slideDown 2s infinite;
+}
+.logo-lopta-desno{
+  position: absolute;
+  background-color: var(--crvena);
+  width:60%;
+  height: 25%;
+  left: 20%;
+  bottom: 10%;
+  border-radius: 50%;
+  animation: slideUp 2s infinite;
+}
+@keyframes slideUp {
+  0%{
+    bottom: 10%;
+  }
+  50%{
+    bottom: 70%;
+  }
+  100%{
+    bottom: 10%;
+  }
+}
+@keyframes slideDown {
+  0%{
+    top:10%;
+  }
+  50%{
+    top:70%;
+  }
+  100%{
+    top: 10%;
+  }
+}
