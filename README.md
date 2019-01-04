@@ -1,3 +1,3 @@
 # css-images
-Day 1: Koala image code along with Coding Artist
-       Diamond logo code along with Coding Artist
+Day 1: Koala and Diamond.<br>
+Day 2:
