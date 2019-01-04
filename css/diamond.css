@@ -1,0 +1,95 @@
+:root{
+  --zuta: #FDD231;
+  --breskva: #FEEEB7;
+  --narandzasta: #EA6C00;
+  --oker: #FDAD00;
+  --ljubicasta: #210E3D;
+  --trougao-dole: polygon(50% 100%, 0 0, 100% 0);
+  --trougao-gore: polygon(50% 0%, 0% 100%, 100% 100%);
+  --trougao-levo-kraj: polygon(100% 100%, 100% 0, 0 100%);
+  --trougao-desno-kraj: polygon(100% 100%, 0 0, 0 100%);
+  --trougao-levo: polygon(0 100%, 100% 0, 0 0);
+  --trougao-desno: polygon(0 0, 100% 100%, 100% 0);
+}
+body{
+  background: var(--ljubicasta);
+}
+.box{
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 8%;
+  height: 400px;
+  width: 600px;
+  border: 2px solid red;
+}
+.trougao-veliki-dole{
+  clip-path: var(--trougao-dole);
+  background-color: var(--narandzasta);
+  position: absolute;
+  width: 50%;
+  height: 55%;
+  left: 25%;
+  bottom: 5%;
+}
+.trougao-sredina-dole{
+  position: relative;
+  height: 100%;
+  width:60%;
+  background-color: var(--oker);
+  left: 20%;
+  clip-path: var(--trougao-dole);
+}
+.trougao-gore{
+  background-color: var(--breskva);
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  clip-path: var(--trougao-gore);
+  left:35%;
+  top: 10%;
+}
+.trougao-levo{
+  background-color: var(--zuta);
+  position: absolute;
+  top: 10%;
+  left:35%;
+  width:15%;
+  height: 30%;
+  clip-path: var(--trougao-levo);
+}
+.trougao-desno{
+  background-color: var(--zuta);
+  position: absolute;
+  top: 10%;
+  right:35%;
+  width:15%;
+  height: 30%;
+  clip-path: var(--trougao-desno);
+}
+.trougao-levo-kraj{
+  background-color: var(--oker);
+  position: absolute;
+  width: 10%;
+  height: 30%;
+  clip-path: var(--trougao-levo-kraj);
+  top: 10%;
+  left: 25.1%;
+}
+.trougao-desno-kraj{
+  background-color: var(--oker);
+  position: absolute;
+  width: 10%;
+  height: 30%;
+  clip-path: var(--trougao-desno-kraj);
+  top: 10%;
+  right: 25.1%;
+}
+@media all and (max-width:600px) {
+  .box{
+    margin-top: 100px;
+    height: 175px;
+    width: 250px;
+
+  }
+}

@@ -1,0 +1,124 @@
+:root{
+  --blue: #25a9fc;
+  --light_grey: #a6becf;
+  --dark_grey: #819caf;
+  --black: #27354a;
+  --brown: #be845f;
+  --triangle: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+body{
+  background: var(--blue);
+}
+.box{
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 600px;
+  height: 420px;
+  background: none;
+  /* border: 3px solid white; */
+}
+.head{
+  position: absolute;
+  top: 16.5%; /* centriranje (100-sirina)/2*/
+  left: 25%; /*centriranje (100-visina)/2*/
+  width: 50%;
+  height: 67%;
+  background: var(--light_grey);
+  border-radius: 50%; /*da bi dobili krug*/
+}
+.head-copy{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--light_grey);
+  border-radius: 50%;
+  z-index: 2; /*da bi usi smestili iza nje*/
+}
+.ear-left{
+  position: absolute;
+  left: -20%;
+  top: 5%;
+  width:60%;
+  height: 65%;
+  border-radius: 50%;
+  background: var(--light_grey);
+  z-index: 1;
+}
+.ear-right{
+  position: absolute;
+  right: -20%;
+  top: 5%;
+  width:60%;
+  height: 65%;
+  border-radius: 50%;
+  background: var(--light_grey);
+  z-index: 1;
+}
+.inner-ear{
+  position: absolute;
+  left:10%;
+  top:10%;
+  width: 80%;
+  height: 80%;
+  background: var(--dark_grey);
+  border-radius: 50%;
+}
+.eye-left{
+  position: absolute;
+  top: 25%;
+  left: 21%;
+  width:30%;
+  height: 33%;
+  border-radius: 50%;
+  z-index: 3; /*iznad svega*/
+  background: white;
+}
+.eye-right{
+  position: absolute;
+  top: 25%;
+  right: 21%;
+  width:30%;
+  height: 33%;
+  border-radius: 50%;
+  z-index: 2; /*iznad svega*/
+  background: white;
+}
+.pupil{
+  position: absolute;
+  background: var(--black);
+  width:30%;
+  height: 30%;
+  border-radius: 50%;
+  top:35%;
+  left: 35%;
+}
+.nose{
+  position: absolute;
+  width: 25%;
+  height: 42.5%;
+  top: 45%;
+  left: 37%;
+  background: var(--brown) ;
+  border-radius: 50px ;
+  z-index: 4;
+}
+.hair-left{
+  background: var(--light_grey);
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  left: 30%;
+  top: -8%;
+  clip-path: var(--triangle);
+}
+.hair-right{
+  background: var(--light_grey);
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  left: 48%;
+  top: -4%;
+  clip-path: var(--triangle);
+}
