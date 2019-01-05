@@ -256,3 +256,21 @@ i{
     top: 10%;
   }
 }
+@media all and (max-width:600px) {
+  .box{
+    margin-top: 100px;
+    height: 175px;
+    width: 250px;
+  }
+  div{
+    font-size: 0.5em;
+  }
+  .logo-levo{
+    border: 3px solid white;
+    border-radius: 10px 0 0 10px;
+  }
+  .logo-desno{
+    border: 3px solid white;
+    border-radius: 0 10px 10px 0;
+  }
+}

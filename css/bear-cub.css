@@ -1,0 +1,277 @@
+/* Colors used for making bear cub */
+:root{
+  --telo: #B58151; /*body*/
+  --njuska: #D38D5F; /*inside head*/
+  --sape: #855E35; /*inside legs and stomach*/
+  --braon: #654321; /*borders*/
+  --pozadina: #9EEFE5 ; /*background*/
+}
+body{
+  background-color: var(--pozadina);
+}
+h1{
+  text-align: center;
+  color: var(--sape);
+  text-transform: capitalize;
+}
+.box{
+  position: relative;
+  width: 600px;
+  height: 500px;
+  display: box;
+  margin: 8% auto auto auto;
+}
+.head{
+  position: absolute;
+  width: 35%;
+  height: 35%;
+  left: 32.5%;
+  top: 10%;
+  background-color: var(--telo);
+  border-radius: 50%;
+  border: 2px solid var(--braon);
+  z-index: 2;
+}
+.l-ear{
+  position: absolute;
+  width: 17%;
+  height: 17%;
+  background-color: var(--telo);
+  border-radius: 50%;
+  left: 25%;
+  top: 10%;
+  z-index:1;
+  border: 2px solid var(--braon);
+}
+.r-ear{
+  position: absolute;
+  width: 17%;
+  height: 17%;
+  background-color: var(--telo);
+  border-radius: 50%;
+  right: 25%;
+  top: 10%;
+  z-index:1;
+  border: 2px solid var(--braon);
+}
+.l-ear-inside{
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: var(--sape);
+  border-radius: 50%;
+  left: 15%;
+  top: 15%;
+  border: 2px solid var(--braon);
+}
+.r-ear-inside{
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: var(--sape);
+  border-radius: 50%;
+  right: 15%;
+  top: 15%;
+  border: 2px solid var(--braon);
+}
+.eye-left{
+  position: absolute;
+  width: 13%;
+  height: 15%;
+  background-color:black;
+  border-radius: 50%;
+  left: 25%;
+  top: 30%;
+}
+.eye-right{
+  position: absolute;
+  width: 13%;
+  height: 15%;
+  background-color: black;
+  border-radius: 50%;
+  right: 25%;
+  top: 30%;
+}
+.pupil{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: white;
+  border-radius: 50%;
+  right: 10%;
+  top: 10%;
+}
+.down{
+  position: absolute;
+  height: 40%;
+  width: 40%;
+  background-color: var(--njuska);
+  border-radius: 50%;
+  border: 1px solid black;
+  top: 45%;
+  left: 29%;
+}
+.nose{
+  position: absolute;
+  width: 40%;
+  height: 30%;
+  background-color: black;
+  border-radius: 50%;
+  left: 30%;
+  top: 30%;
+}
+.mouth{
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  background: none;
+  border: 1px solid black;
+  border-radius: 90%;
+  top: 50%;
+  left: 30%;
+}
+.mouth-copy{
+  position: absolute;
+  width: 60%;
+  height: 40%;
+  background: var(--njuska);
+  border-radius: 90%;
+  top: 43%;
+  left: 20%;
+}
+.body{
+  position: absolute;
+  width: 40%;
+  height: 45%;
+  background-color: var(--telo);
+  border-radius: 50%;
+  border: 2px solid var(--braon);
+  left: 30%;
+  top: 40%;
+}
+.stomach{
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  background-color: var(--sape);
+  border-radius: 50%;
+  border: 2px solid var(--braon);
+  left: 20%;
+  top: 35%;
+}
+.l-arm{
+  position: absolute;
+  width: 10%;
+  height: 25%;
+  border-radius: 50%;
+  background-color: var(--telo);
+  transform: rotate(20deg);
+  border:2px solid var(--braon);
+  left: 27%;
+  top: 45%;
+}
+.r-arm{
+  position: absolute;
+  width: 10%;
+  height: 25%;
+  border-radius: 50%;
+  background-color: var(--telo);
+  transform: rotate(160deg);
+  border:2px solid var(--braon);
+  right: 27%;
+  top: 45%;
+}
+.l-leg{
+  position: absolute;
+  width: 15%;
+  height: 25%;
+  border-radius: 50%;
+  background-color: var(--telo);
+  transform: rotate(160deg);
+  border:2px solid var(--braon);
+  left: 30%;
+  top: 65%;
+}
+.r-leg{
+  position: absolute;
+  width: 15%;
+  height: 25%;
+  border-radius: 50%;
+  background-color: var(--telo);
+  transform: rotate(20deg);
+  border:2px solid var(--braon);
+  right: 30%;
+  top: 65%;
+}
+.l-leg-inside{
+  background-color: var(--sape);
+  width: 60%;
+  height: 40%;
+  border-radius: 50%;
+  position: absolute;
+  left: 25%;
+  top: 10%;
+}
+.r-leg-inside{
+  background-color: var(--sape);
+  width: 60%;
+  height: 40%;
+  border-radius: 50%;
+  position: absolute;
+  right: 25%;
+  bottom: 10%;
+}
+.inside-l{
+  background-color: var(--sape);
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  position: absolute;
+  right: 15%;
+  bottom: 30%;
+}
+.inside-r{
+  background-color: var(--sape);
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  position: absolute;
+  left: 15%;
+  bottom: 30%;
+}
+.inside-u{
+  background-color: var(--sape);
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  position: absolute;
+  left: 40%;
+  bottom: 20%;
+}
+.inside-ur{
+  background-color: var(--sape);
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  position: absolute;
+  right: 40%;
+  top: 20%;
+}
+.inside-rr{
+  background-color: var(--sape);
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  position: absolute;
+  right: 15%;
+  top: 30%;
+}
+.inside-lr{
+  background-color: var(--sape);
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  position: absolute;
+  left: 15%;
+  top: 30%;
+}
