@@ -1,6 +1,6 @@
 ## Challenges
 
-1. Bear Cub -finished 5.1.2019
+1. <b>Bear Cub</b> -finished 5.1.2019
 2. Elephant
 3. Beaver
 4. Tiger
