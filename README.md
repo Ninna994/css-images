@@ -5,7 +5,7 @@
 3. Beaver
 4. Tiger
 5. Favorite Animated Animal
-6. Clock
+6. <b>Clock</b> - finished 5.1.2019
 7. Ruler
 8. Notepad
 9. Calendar
