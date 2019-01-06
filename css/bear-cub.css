@@ -169,6 +169,7 @@ h1{
   border:2px solid var(--braon);
   left: 27%;
   top: 45%;
+
 }
 .r-arm{
   position: absolute;
@@ -191,6 +192,7 @@ h1{
   border:2px solid var(--braon);
   left: 30%;
   top: 65%;
+  animation: waveLeft 3s infinite;
 }
 .r-leg{
   position: absolute;
@@ -202,6 +204,8 @@ h1{
   border:2px solid var(--braon);
   right: 30%;
   top: 65%;
+  animation: waveRight 3s infinite;
+
 }
 .l-leg-inside{
   background-color: var(--sape);
@@ -274,4 +278,44 @@ h1{
   position: absolute;
   left: 15%;
   top: 30%;
+}
+@keyframes waveLeft {
+  0%{
+    transform: rotate(160deg);
+  }
+  50%{
+    transform: rotate(140deg);
+  }
+  100%{
+    transform: rotate(160deg);
+  }
+}
+@keyframes waveRight {
+  0%{
+  transform: rotate(20deg);
+  }
+  50%{
+    transform: rotate(40deg);
+  }
+  100%{
+    transform: rotate(20deg);
+  }
+}
+@media all and (max-width:600px) {
+  .box{
+    margin-top: 100px;
+    height: 200px;
+    width: 300px;
+  }
+  div{
+    font-size: 0.5em;
+  }
+  .logo-levo{
+    border: 3px solid white;
+    border-radius: 10px 0 0 10px;
+  }
+  .logo-desno{
+    border: 3px solid white;
+    border-radius: 0 10px 10px 0;
+  }
 }
