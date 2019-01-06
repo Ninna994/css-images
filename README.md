@@ -30,7 +30,7 @@
 28. Cogs
 29. Download
 30. Bar Graph
-31.Javascript Logo
+31. Javascript Logo
 32. Angular Logo
 33. Vue JS Logo
 34. React Logo
