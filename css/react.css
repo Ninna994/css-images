@@ -1,0 +1,86 @@
+:root{
+  --blue: #61DBFB;
+  --background: #282C34;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: var(--background);
+}
+p{
+  margin-top: 5vh;
+  text-align: center;
+  color: var(--blue);
+  text-transform: capitalize;
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-weight: 300;
+  font-size: 3em;
+}
+.box{
+  position: relative;
+  width: 600px;
+  height: 500px;
+  display: box;
+  margin: 5% auto auto auto;
+}
+.react{
+  content: "";
+  position: relative;
+  width: 20%;
+  height: 70%;
+  left: 35%;
+  top: 10%;
+  border-radius: 50%;
+  border: 12px solid var(--blue);
+  transform: rotate(-90deg);
+}
+.react:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -3%;
+  border-radius: 50%;
+  border: 12px solid var(--blue);
+  transform: rotate(120deg);
+}
+.react:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -3%;
+  border-radius: 50%;
+  border: 12px solid var(--blue);
+  transform: rotate(60deg);
+}
+.dott{
+  position: absolute;
+  width: 40%;
+  height: 15%;
+  left: 30%;
+  top: 42.5%;
+  background: var(--blue);
+  border-radius: 50%;
+}
+@media all and (max-width:510px) {
+  .box{
+    width: 400px;
+    height: 400px;
+  }
+  .react{
+    border: 5px solid var(--blue);
+  }
+  .react:before{
+    border: 5px solid var(--blue);
+  }
+  .react:after{
+    border: 5px solid var(--blue);
+  }
+  p{
+    font-size: 2em;
+  }
+}
