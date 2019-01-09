@@ -2,13 +2,13 @@
 
 ## Challenges
 
-1. [x] Bear Cub -finished 5.1.2019
+1. [x] Bear Cub -finished 5.1.2019.
 1. Elephant
 1. Beaver
 1. Tiger
 1. Favorite Animated Animal
-1. [x] Clock - finished 5.1.2019
-1. Ruler
+1. [x] Clock - finished 5.1.2019.
+1. [x] Ruler - finished 8.1.2019.
 1. Notepad
 1. Calendar
 1. Pencil Jar
@@ -33,7 +33,7 @@
 1. Download
 1. Bar Graph
 1. Javascript Logo
-1. Angular Logo
+1. [x] Angular Logo - finished 9.1.2019.
 1. Vue JS Logo
 1. React Logo
 1. Elm Logo
