@@ -34,7 +34,7 @@
 1. Bar Graph
 1. Javascript Logo
 1. [x] Angular Logo - finished 9.1.2019.
-1. Vue JS Logo
+1. [x] Vue JS Logo -finished 9.1.2019.
 1. React Logo
 1. Elm Logo
 1. Cell Phone
