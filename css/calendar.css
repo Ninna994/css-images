@@ -17,6 +17,7 @@
 body {
   background-color: var(--background);
 }
+
 p {
   margin-top: 5vh;
   text-align: center;
@@ -27,6 +28,12 @@ p {
   font-weight: 400;
   font-size: 2em;
 }
+h3{
+  color: var(--text);
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-weight: 400;
+}
 .box {
   position: relative;
   width: 800px;
@@ -34,8 +41,9 @@ p {
   display: box;
   margin: 5% auto auto auto;
 }
+
 .calendar,
-.calendar-copy{
+.calendar-copy {
   position: absolute;
   width: 70%;
   height: 65%;
@@ -49,21 +57,25 @@ p {
   box-shadow: 30px 31px 49px -6px black;
   text-shadow: 1px 1px 1px var(--text);
 }
-.calendar:hover{
+
+.calendar:hover {
   animation: reveal 3s linear;
 }
+
 .calendar p,
-.calendar-copy p{
+.calendar-copy p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.week{
+
+.week {
   position: absolute;
   width: 100%;
   height: 10%;
   border: 1px solid var(--text);
 }
-.day{
+
+.day {
   position: absolute;
   width: 14%;
   height: 100%;
@@ -71,51 +83,63 @@ p {
   font-size: 1.5em;
   text-align: center;
 }
-.day:nth-child(2){
-  left:16%;
+
+.day:nth-child(2) {
+  left: 16%;
 }
-.day:nth-child(3){
-  left:30%;
+
+.day:nth-child(3) {
+  left: 30%;
 }
-.day:nth-child(4){
-  left:44%;
+
+.day:nth-child(4) {
+  left: 44%;
 }
-.day:nth-child(5){
-  left:58%;
+
+.day:nth-child(5) {
+  left: 58%;
 }
-.day:nth-child(6){
-  left:72%;
+
+.day:nth-child(6) {
+  left: 72%;
 }
-.day:nth-child(7){
-  left:86%;
+
+.day:nth-child(7) {
+  left: 86%;
 }
+
 .week1,
 .week2,
 .week3,
 .week4,
 .week5 {
   position: absolute;
-  width:100%;
+  width: 100%;
   height: 12%;
   top: 30%;
 }
-.week2{
+
+.week2 {
   top: 43%;
 }
-.week3{
+
+.week3 {
   top: 56%;
 }
-.week4{
+
+.week4 {
   top: 69%;
 }
-.week5{
+
+.week5 {
   top: 82%;
 }
-.week1  .date,
+
+.week1 .date,
 .week2 .date,
 .week3 .date,
 .week4 .date,
-.week5 .date{
+.week5 .date {
   position: absolute;
   width: 14%;
   height: 100%;
@@ -126,83 +150,94 @@ p {
   border-right: 1px solid var(--text);
   padding-top: 10px;
 }
+
 .week1 .date:nth-of-type(2),
 .week2 .date:nth-of-type(2),
 .week3 .date:nth-of-type(2),
 .week4 .date:nth-of-type(2),
-.week5 .date:nth-of-type(2){
+.week5 .date:nth-of-type(2) {
   left: 16%;
 }
+
 .week1 .date:nth-of-type(3),
 .week2 .date:nth-of-type(3),
 .week3 .date:nth-of-type(3),
 .week4 .date:nth-of-type(3),
-.week5 .date:nth-of-type(3){
+.week5 .date:nth-of-type(3) {
   left: 30%;
 }
+
 .week1 .date:nth-of-type(4),
 .week2 .date:nth-of-type(4),
 .week3 .date:nth-of-type(4),
-.week4 .date:nth-of-type(4){
+.week4 .date:nth-of-type(4) {
   left: 44%;
 }
 
 .week1 .date:nth-of-type(5),
 .week2 .date:nth-of-type(5),
 .week3 .date:nth-of-type(5),
-.week4 .date:nth-of-type(5){
+.week4 .date:nth-of-type(5) {
   left: 58%;
 }
+
 .week1 .date:nth-of-type(6),
 .week2 .date:nth-of-type(6),
 .week3 .date:nth-of-type(6),
-.week4 .date:nth-of-type(6){
+.week4 .date:nth-of-type(6) {
   left: 72%;
 }
+
 .week1 .date:nth-of-type(7),
 .week2 .date:nth-of-type(7),
 .week3 .date:nth-of-type(7),
-.week4 .date:nth-of-type(7){
+.week4 .date:nth-of-type(7) {
   left: 86%;
-  border:none;
+  border: none;
 }
-.week4 .date:nth-of-type(7){
+
+.week4 .date:nth-of-type(7) {
   color: var(--text);
   text-shadow: 2px 2px 2px var(--text);
   font-size: 2.5em;
   padding: 0;
 }
 
-.table{
+.table {
   position: absolute;
   height: 40%;
   width: 100%;
   background: var(--text);
   top: 55%;
-
 }
+
 @keyframes reveal {
-  0%{
+  0% {
     transform: translate(0px, 0px);
   }
-  50%{
+
+  50% {
     transform: translate(-10px, 55px);
   }
-  100%{
+
+  100% {
     transform: translate(0px, 0px);
   }
 }
+
 @media all and (max-width:700px) {
   .box {
     height: 500px;
     width: 500px;
   }
-  .week4 .date:nth-of-type(7){
+
+  .week4 .date:nth-of-type(7) {
     color: var(--text);
     text-shadow: 2px 2px 2px var(--text);
     font-size: 2em;
     padding-top: 5px;
   }
+
   p {
     font-size: 1.5em;
   }
