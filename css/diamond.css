@@ -1,4 +1,4 @@
-:root{
+:root {
   --zuta: #FDD231;
   --breskva: #FEEEB7;
   --narandzasta: #EA6C00;
@@ -11,19 +11,22 @@
   --trougao-levo: polygon(0 100%, 100% 0, 0 0);
   --trougao-desno: polygon(0 0, 100% 100%, 100% 0);
 }
-body{
+
+body {
   background: var(--ljubicasta);
 }
-.box{
+
+.box {
   position: relative;
   display: block;
   margin: auto;
   margin-top: 8%;
-  height: 400px; 
+  height: 400px;
   width: 600px;
   border: 2px solid red;
 }
-.trougao-veliki-dole{
+
+.trougao-veliki-dole {
   clip-path: var(--trougao-dole);
   background-color: var(--narandzasta);
   position: absolute;
@@ -32,42 +35,47 @@ body{
   left: 25%;
   bottom: 5%;
 }
-.trougao-sredina-dole{
+
+.trougao-sredina-dole {
   position: relative;
   height: 100%;
-  width:60%;
+  width: 60%;
   background-color: var(--oker);
   left: 20%;
   clip-path: var(--trougao-dole);
 }
-.trougao-gore{
+
+.trougao-gore {
   background-color: var(--breskva);
   position: absolute;
   width: 30%;
   height: 30%;
   clip-path: var(--trougao-gore);
-  left:35%;
+  left: 35%;
   top: 10%;
 }
-.trougao-levo{
+
+.trougao-levo {
   background-color: var(--zuta);
   position: absolute;
   top: 10%;
-  left:35%;
-  width:15%;
+  left: 35%;
+  width: 15%;
   height: 30%;
   clip-path: var(--trougao-levo);
 }
-.trougao-desno{
+
+.trougao-desno {
   background-color: var(--zuta);
   position: absolute;
   top: 10%;
-  right:35%;
-  width:15%;
+  right: 35%;
+  width: 15%;
   height: 30%;
   clip-path: var(--trougao-desno);
 }
-.trougao-levo-kraj{
+
+.trougao-levo-kraj {
   background-color: var(--oker);
   position: absolute;
   width: 10%;
@@ -76,7 +84,8 @@ body{
   top: 10%;
   left: 25.1%;
 }
-.trougao-desno-kraj{
+
+.trougao-desno-kraj {
   background-color: var(--oker);
   position: absolute;
   width: 10%;
@@ -85,11 +94,11 @@ body{
   top: 10%;
   right: 25.1%;
 }
+
 @media all and (max-width:600px) {
-  .box{
+  .box {
     margin-top: 100px;
     height: 175px;
     width: 250px;
-
   }
 }

@@ -1,15 +1,18 @@
-:root{
+:root {
   --blue: #61DBFB;
   --background: #282C34;
 }
-*{
+
+* {
   padding: 0;
   margin: 0;
 }
-body{
+
+body {
   background-color: var(--background);
 }
-p{
+
+p {
   margin-top: 5vh;
   text-align: center;
   color: var(--blue);
@@ -19,14 +22,16 @@ p{
   font-weight: 300;
   font-size: 3em;
 }
-.box{
+
+.box {
   position: relative;
   width: 600px;
   height: 500px;
   display: box;
   margin: 5% auto auto auto;
 }
-.react{
+
+.react {
   content: "";
   position: relative;
   width: 20%;
@@ -37,7 +42,8 @@ p{
   border: 12px solid var(--blue);
   transform: rotate(-90deg);
 }
-.react:after{
+
+.react:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -47,7 +53,8 @@ p{
   border: 12px solid var(--blue);
   transform: rotate(120deg);
 }
-.react:before{
+
+.react:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -57,7 +64,8 @@ p{
   border: 12px solid var(--blue);
   transform: rotate(60deg);
 }
-.dott{
+
+.dott {
   position: absolute;
   width: 40%;
   height: 15%;
@@ -66,21 +74,26 @@ p{
   background: var(--blue);
   border-radius: 50%;
 }
+
 @media all and (max-width:510px) {
-  .box{
+  .box {
     width: 400px;
     height: 400px;
   }
-  .react{
+
+  .react {
     border: 5px solid var(--blue);
   }
-  .react:before{
+
+  .react:before {
     border: 5px solid var(--blue);
   }
-  .react:after{
+
+  .react:after {
     border: 5px solid var(--blue);
   }
-  p{
+
+  p {
     font-size: 2em;
   }
 }

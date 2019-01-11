@@ -1,0 +1,224 @@
+:root {
+  --brown: #7A7978;
+  --background: #8AC4FF;
+  --notebook: tomato;
+  --shaddow: #A44A3F;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background);
+}
+
+p {
+  margin-top: 5vh;
+  text-align: center;
+  color: var(--brown);
+  text-transform: capitalize;
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.box {
+  position: relative;
+  width: 700px;
+  height: 0600px;
+  display: box;
+  margin: 5% auto auto auto;
+  border: 1px solid black;
+}
+
+.spiral {
+  position: absolute;
+  width: 4%;
+  height: 4%;
+  border-left: 4px solid black;
+  border-bottom: 2px solid black;
+  border-right: 5px solid var(--notebook);
+  left: 30%;
+  top: 10%;
+  border-radius: 50%;
+  transform: rotate(35deg) skew(-40deg, -10deg);
+}
+
+.spiral:nth-of-type(2) {
+  top: 15%;
+}
+
+.spiral:nth-of-type(3) {
+  top: 20%;
+}
+
+.spiral:nth-of-type(4) {
+  top: 25%;
+}
+
+.spiral:nth-of-type(5) {
+  top: 30%;
+}
+
+.spiral:nth-of-type(6) {
+  top: 35%;
+}
+
+.spiral:nth-of-type(7) {
+  top: 40%;
+}
+
+.spiral:nth-of-type(8) {
+  top: 45%;
+}
+
+.spiral:nth-of-type(9) {
+  top: 50%;
+}
+
+.spiral:nth-of-type(10) {
+  top: 55%;
+}
+
+.spiral:nth-of-type(11) {
+  top: 60%;
+}
+
+.spiral:nth-of-type(12) {
+  top: 65%;
+}
+
+.spiral:nth-of-type(13) {
+  top: 70%;
+}
+
+.spiral:nth-of-type(14) {
+  top: 75%;
+}
+
+.cover {
+  position: absolute;
+  width: 50%;
+  height: 75%;
+  background: var(--notebook);
+  left: 32%;
+  top: 8%;
+  box-shadow: 20px 10px 80px #14080E;
+}
+
+.holder {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  border-radius: 50%;
+  background: black;
+  top: 3%;
+  left: 3%;
+}
+
+.holder:nth-of-type(2) {
+  top: 10%;
+}
+
+.holder:nth-of-type(3) {
+  top: 16%;
+}
+
+.holder:nth-of-type(4) {
+  top: 23%;
+}
+
+.holder:nth-of-type(5) {
+  top: 30%;
+}
+
+.holder:nth-of-type(6) {
+  top: 36.5%;
+}
+
+.holder:nth-of-type(7) {
+  top: 43%;
+}
+
+.holder:nth-of-type(8) {
+  top: 50%;
+}
+
+.holder:nth-of-type(9) {
+  top: 56.5%;
+}
+
+.holder:nth-of-type(10) {
+  top: 63%;
+}
+
+.holder:nth-of-type(11) {
+  top: 70%;
+}
+
+.holder:nth-of-type(12) {
+  top: 76.5%;
+}
+
+.holder:nth-of-type(13) {
+  top: 83%;
+}
+
+.holder:nth-of-type(14) {
+  top: 90%;
+}
+
+.label {
+  position: absolute;
+  width: 60%;
+  height: 30%;
+  background: white;
+  left: 20%;
+  top: 20%;
+  box-shadow: 2px 2px 70px 20px var(--shaddow);
+}
+
+.line {
+  position: absolute;
+  width: 80%;
+  height: 25%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #7FC2FE;
+  text-align: center;
+}
+
+.line span {
+  font-size: 2em;
+  color: grey;
+}
+
+.line:nth-of-type(2) {
+  top: 45%;
+}
+
+@media all and (max-width:510px) {
+  .box {
+    width: 400px;
+    height: 400px;
+  }
+
+  .spiral {
+    width: 3%;
+    height: 3%;
+    border-left: 3px solid black;
+    border-bottom: 1px solid black;
+    border-right: 3px solid var(--notebook);
+  }
+
+  .line span {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 2em;
+  }
+}

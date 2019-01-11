@@ -1,22 +1,25 @@
-:root{
+:root {
   --blue: #34495E;
   --green: #41B883;
   --background: lightgrey;
-  --triangle : polygon(50% 100%, 0 0, 100% 0);
+  --triangle: polygon(50% 100%, 0 0, 100% 0);
   --from: #39A27A;
   --to: #37495F;
   --text: #2c3e50;
 }
-*{
+
+* {
   padding: 0;
   margin: 0;
 }
-body{
+
+body {
   background-image: linear-gradient(to bottom, var(--from), var(--to));
   background-repeat: no-repeat;
   height: 95vh;
 }
-p{
+
+p {
   margin-top: 5vh;
   text-align: center;
   color: var(--to);
@@ -24,10 +27,11 @@ p{
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
-  color:var(--text);
+  color: var(--text);
   font-size: 3em;
 }
-.box{
+
+.box {
   position: relative;
   width: 500px;
   height: 450px;
@@ -35,14 +39,16 @@ p{
   margin: 15% auto auto auto;
   background: var(--body);
 }
-.green{
+
+.green {
   position: absolute;
   width: 100%;
   height: 100%;
   background: var(--green);
   clip-path: var(--triangle);
 }
-.blue{
+
+.blue {
   position: absolute;
   width: 65%;
   height: 65%;
@@ -50,7 +56,8 @@ p{
   background: var(--blue);
   clip-path: var(--triangle);
 }
-.white{
+
+.white {
   position: absolute;
   width: 50%;
   height: 45%;
@@ -58,13 +65,15 @@ p{
   background: white;
   clip-path: var(--triangle);
 }
+
 @media all and (max-width:510px) {
-  .box{
+  .box {
     width: 300px;
     height: 250px;
     display: box;
   }
-  p{
+
+  p {
     font-size: 2em;
   }
 }

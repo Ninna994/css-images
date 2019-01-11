@@ -1,4 +1,4 @@
-:root{
+:root {
   --left-color: #DD0031;
   --right-color: #C3002F;
   --letter: #C3002F;
@@ -7,16 +7,19 @@
   --from: #1453AC;
   --to: #3E9EEF;
 }
-*{
+
+* {
   padding: 0;
   margin: 0;
 }
-body{
+
+body {
   background-image: linear-gradient(to bottom right, var(--from), var(--to));
   background-repeat: no-repeat;
   height: 95vh;
 }
-h1{
+
+h1 {
   text-align: center;
   margin-top: 5vh;
   color: var(--letter);
@@ -24,14 +27,16 @@ h1{
   text-shadow: -2px 2px black;
   font-family: 'Josefin Sans', sans-serif;
 }
-.box{
+
+.box {
   position: relative;
   width: 500px;
   height: 500px;
   display: box;
   margin: 8% auto auto auto;
 }
-.left{
+
+.left {
   position: absolute;
   width: 70%;
   height: 80%;
@@ -39,9 +44,10 @@ h1{
   top: 10%;
   background-color: var(--left-color);
   clip-path: var(--left-side);
-    z-index: 1;
+  z-index: 1;
 }
-.right{
+
+.right {
   position: absolute;
   width: 70%;
   height: 80%;
@@ -49,9 +55,10 @@ h1{
   top: 10%;
   background-color: var(--right-color);
   clip-path: var(--right-side);
-    z-index: 1;
+  z-index: 1;
 }
-.letter{
+
+.letter {
   position: absolute;
   width: 70%;
   height: 70%;
