@@ -9,7 +9,7 @@
 1. Favorite Animated Animal
 1. [x] Clock - finished 5.1.2019.
 1. [x] Ruler - finished 8.1.2019.
-1. [x] Notepad - finished 11.1.2019.
+1. [x] Notebook - finished 11.1.2019.
 1. Calendar
 1. Pencil Jar
 1. Pizza
