@@ -11,7 +11,7 @@
 1. [x] Ruler - finished 8.1.2019.
 1. [x] Notebook - finished 11.1.2019.
 1. [x] Calendar - finished 12.1.2019. 
-1. Pencil Jar
+1. [x] Pencil Jar -finished 12.1.2019.
 1. Pizza
 1. Hamburger
 1. Taco
