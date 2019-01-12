@@ -1,0 +1,262 @@
+:root {
+  --background: #94AEFF;
+  --jar: #000F3D;
+  --red: #ED6353;
+  --blue: #136AD4;
+  --body: #CCB38C;
+  --yellow: #F2C975;
+  --green: #008773;
+  --text: #1C3341;
+  --rose: #D16D6B;
+  --gold: #DAA520;
+  --orange: #D17810;
+  --magenta: #CA18D1;
+  --purple: #5533D1;
+  --sky: #0CBAE8;
+  --triangle: polygon(50% 100%, 0 0, 100% 0);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background);
+}
+
+p {
+  margin-top: 5vh;
+  text-align: center;
+  color: var(--text);
+  text-transform: capitalize;
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  font-size: 2em;
+}
+
+h3 {
+  color: var(--text);
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-weight: 400;
+}
+
+.box {
+  position: relative;
+  width: 750px;
+  height: 600px;
+  display: box;
+  margin: 5% auto auto auto;
+}
+
+.jar {
+  position: absolute;
+  width: 35%;
+  height: 45%;
+  left: 32.5%;
+  top: 45%;
+  border: 1px solid var(--jar);
+}
+
+.jar-top,
+.jar-bottom {
+  position: absolute;
+  width: 105%;
+  height: 5%;
+  left: -2%;
+  background-color: var(--jar);
+  border-radius: 20%;
+}
+
+.jar-top {
+  top: -1%;
+}
+
+.jar-bottom {
+  bottom: -1%;
+  left: -2%;
+}
+
+.mesh {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://www.transparenttextures.com/patterns/woven-light.png");
+}
+
+.pencils {
+  position: absolute;
+  width: 42%;
+  height: 90%;
+  left: 29%;
+}
+.eraser {
+  position: absolute;
+  width: 15%;
+  height: 20%;
+  border-radius: 20%;
+  background-color: var(--red);
+  z-index: -2;
+  border: 1px solid black;
+  left: 15%;
+  bottom: 2%;
+  transform: rotate(-20deg);
+}
+
+.blue-part {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  background: var(--blue);
+  border-top: 1px solid black;
+}
+.pencil {
+  position: absolute;
+  height: 80%;
+  width: 5%;
+  border-radius: 20%;
+  border: 0.5px solid black;
+  border-bottom: 0 solid black;
+}
+
+.tip {
+  position: absolute;
+  background-color: var(--body);
+  width: 100%;
+  height: 7%;
+  bottom: -7%;
+  border-bottom: 15px solid;
+  clip-path: var(--triangle);
+}
+
+.pencil:nth-child(1) {
+  background: var(--red);
+  left: 75%;
+  top: 15%;
+  z-index: -1;
+  transform: rotateZ(20deg);
+}
+
+.pencil:nth-child(1) .tip {
+  border-bottom-color: var(--red);
+}
+
+.pencil:nth-child(2) {
+  background: var(--blue);
+  left: 65%;
+  top: 15%;
+  z-index: -2;
+  transform: rotateZ(20deg);
+}
+
+.pencil:nth-child(2) .tip {
+  border-bottom-color: var(--blue);
+}
+
+.pencil:nth-child(3) {
+  background: var(--green);
+  left: 70%;
+  top: 14%;
+  z-index: -1;
+  transform: rotateZ(-10deg);
+  z-index: -2;
+}
+
+.pencil:nth-child(3) .tip {
+  border-bottom-color: var(--green);
+}
+
+.pencil:nth-child(4) {
+  background: var(--yellow);
+  left: 40%;
+  top: 18%;
+  transform: rotateZ(-30deg);
+  z-index: -2;
+}
+
+.pencil:nth-child(4) .tip {
+  border-bottom-color: var(--yellow);
+}
+
+.pencil:nth-child(5) {
+  background: var(--rose);
+  left: 20%;
+  top: 14%;
+  transform: rotateZ(-15deg);
+  z-index: -1;
+}
+
+.pencil:nth-child(5) .tip {
+  border-bottom-color: var(--rose);
+}
+
+.pencil:nth-child(6) {
+  background: var(--gold);
+  left: 20%;
+  top: 18%;
+  transform: rotateZ(-30deg);
+  z-index: -1;
+}
+
+.pencil:nth-child(6) .tip {
+  border-bottom-color: var(--gold);
+}
+
+.pencil:nth-child(7) {
+  background: var(--orange);
+  left: 40%;
+  top: 20%;
+  transform: rotate(-160deg);
+  z-index: -2;
+}
+
+.pencil:nth-child(7) .tip {
+  border-bottom-color: var(--orange);
+}
+
+.pencil:nth-child(8) {
+  background: var(--magenta);
+  left: 50%;
+  top: 18%;
+  transform: rotate(170deg);
+  z-index: -3;
+}
+
+.pencil:nth-child(8) .tip {
+  border-bottom-color: var(--magenta);
+}
+
+.pencil:nth-child(9) {
+  background: var(--purple);
+  left: 70%;
+  top: 18%;
+  transform: rotate(-175deg);
+  z-index: -1;
+}
+
+.pencil:nth-child(9) .tip {
+  border-bottom-color: var(--purple);
+}
+
+.pencil:nth-child(10) {
+  background: var(--sky);
+  left: 20%;
+  top: 18%;
+  transform: rotate(-170deg);
+  z-index: -1;
+}
+
+.pencil:nth-child(10) .tip {
+  border-bottom-color: var(--sky);
+}
+@media all and (max-width:600px) {
+  .box {
+    width: 500px;
+    height: 400px;
+  }
+}
