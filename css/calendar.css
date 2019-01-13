@@ -2,11 +2,8 @@
   --text: #66545e;
   --background: #f6e0b5;
   --calendar: #FDCFF3;
-  /* --calendar: #B8C5D6; */
   --dates: #aa6f73;
   --paper: #FDCFF3;
-  --triangle: polygon(50% 0%, 0% 100%, 100% 100%);
-  --heart: polygon(52% 45%, 65% 27%, 90% 26%, 86% 57%, 73% 82%, 49% 100%, 34% 85%, 15% 60%, 13% 27%, 38% 27%);
 }
 
 * {
