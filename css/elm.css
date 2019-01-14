@@ -1,0 +1,108 @@
+:root {
+  --blue: #60B5CC;
+  --grey: #5A6378;
+  --yellow: #F0AD00;
+  --rose: #D16D6B;
+  --green: #7FD13B;
+  --triangle: polygon(0 0, 0 100%, 100% 50%);
+  --triangle2: polygon(50% 0, 0 100%, 100% 100%);
+  --triangle3: polygon(0 0, 100% 0, 100% 100%);
+  --paralelogram:  polygon(0 0, 66% 0, 100% 41%, 33% 40%);
+  --triangle90: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+p {
+  margin-top: 5vh;
+  text-align: center;
+  color: var(--rose);
+  text-transform: capitalize;
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  display: box;
+  margin: 5% auto auto auto;
+  border: 1px solid white;
+}
+.grey{
+  position: absolute;
+  background: var(--grey);
+  width: 48%;
+  height: 98%;
+  top: 1%;
+  clip-path: var(--triangle);
+}
+.blue{
+  position: absolute;
+  background: var(--blue);
+  width: 98%;
+  height: 48%;
+  bottom: 0;
+  left: 1%;
+  clip-path: var(--triangle2);
+}
+.blue:last-of-type{
+  position: absolute;
+  background: var(--blue);
+  width: 48%;
+  height: 48%;
+  top: 0;
+  left: 52%;
+  clip-path: var(--triangle3);
+}
+.green-sq{
+  position: absolute;
+	width: 32%;
+	height: 32%;
+	right: 7%;
+	top: 35%;
+	transform: rotate(45deg);
+	background: var(--green);
+}
+.yellow-dw{
+  clip-path: var(--triangle90);
+  background: var(--yellow);
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  bottom: 9%;
+  right: -15%;
+  transform: rotate(45deg);
+}
+.yellow-up{
+  clip-path: var(--triangle90);
+  background: var(--yellow);
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  left: 36%;
+  top: 12%;
+  transform: rotate(315deg);
+}
+.green-par{
+  clip-path: var(--paralelogram);
+  background: var(--green);
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 65%;
+  height: 55%;
+}
+@media all and (max-width:600px) {
+  .box {
+    height: 300px;
+    width: 300px;
+  }
+}
