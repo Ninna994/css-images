@@ -48,7 +48,7 @@
 1. Robot
 1. Space-Inspired Mascot
 1. Pinata
-1. Cake
+1. [x] Cake -finished 18.1.2019.
 1. Craft Beer
 1. Dance Dance Revolution Mat
 1. Party City
