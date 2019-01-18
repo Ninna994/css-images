@@ -1,0 +1,186 @@
+:root {
+  --background: white;
+  --rose: rgb(224, 88, 88);
+  --yellow: rgb(243, 210, 119);
+  --green: rgb(119, 243, 140);
+  --blue: rgb(88, 208, 230);
+  --purple: rgb(88, 98, 230);
+  --pink: rgb(230, 88, 230);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background);
+  font-family: 'Segoe UI';
+  font-weight: 400;
+}
+
+p {
+  margin-top: 5vh;
+  color: var(--body);
+  text-transform: capitalize;
+  font-size: 2em;
+  text-align: center;
+}
+
+.box,
+.box-copy {
+  position: relative;
+  width: 700px;
+  height: 500px;
+  display: box;
+  margin: 5% auto auto auto;
+  background-color: #fff;
+}
+
+.box-copy {
+  /* border: 0; */
+  margin: .5% 0;
+  border: 0;
+  height: 100%;
+  top: 100%;
+  z-index: 2;
+}
+
+.container {
+  background-color: var(--rose);
+  position: absolute;
+  width: 10%;
+  height: 80%;
+  margin: 0 1em;
+  bottom: -101%;
+  left: 0;
+  animation: slideUp 1s ease forwards;
+}
+
+.container:hover {
+  animation: slideUpAgain 1s ease forwards;
+}
+
+.skill-name {
+  position: absolute;
+  left: 0;
+  bottom: -10%;
+  width: 10%;
+  height: 10%;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 1em;
+  text-align: center;
+  z-index: 3;
+}
+
+.skill-name:before {
+  content: "Html";
+  color: var(--rose);
+  text-shadow: 1px 1px 1px #000;
+  /* alternate content */
+}
+
+.container:nth-of-type(2) {
+  /* animation-delay: 1s; */
+  background: var(--yellow);
+  height: 30%;
+  left: 15%;
+}
+
+.container:nth-of-type(3) {
+  /* animation-delay: 1s; */
+  background: var(--green);
+  height: 70%;
+  left: 30%;
+}
+
+.container:nth-of-type(4) {
+  /* animation-delay: 1s; */
+  background: var(--blue);
+  height: 50%;
+  left: 45%;
+}
+
+.container:nth-of-type(5) {
+  /* animation-delay: 1s; */
+  background: var(--purple);
+  height: 100%;
+  left: 60%;
+}
+
+.container:nth-of-type(6) {
+  /* animation-delay: 1s; */
+  background: var(--pink);
+  height: 1%;
+  left: 75%;
+}
+
+.skill-name:nth-of-type(7) {
+  left: 15%;
+}
+
+.skill-name:nth-of-type(7):before {
+  content: "js";
+  color: var(--yellow);
+}
+
+.skill-name:nth-of-type(8) {
+  left: 30%;
+}
+
+.skill-name:nth-of-type(8):before {
+  content: "css";
+  color: var(--green);
+}
+
+.skill-name:nth-of-type(9) {
+  left: 45%;
+}
+
+.skill-name:nth-of-type(9):before {
+  content: "php";
+  color: var(--blue);
+}
+
+.skill-name:nth-of-type(10) {
+  left: 60%;
+}
+
+.skill-name:nth-of-type(10):before {
+  content: "markdown";
+  color: var(--purple);
+}
+
+.skill-name:nth-of-type(11) {
+  left: 75%;
+}
+
+.skill-name:nth-of-type(11):before {
+  content: "?";
+  color: var(--pink);
+}
+
+@keyframes slideUp {
+  0% {
+    bottom: -101%;
+  }
+
+  100% {
+    bottom: 0%;
+  }
+}
+
+@keyframes slideUpAgain {
+  0% {
+    bottom: 0%;
+  }
+
+  50% {
+    bottom: -101%;
+  }
+
+  100% {
+    bottom: 0%;
+  }
+}
