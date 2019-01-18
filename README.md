@@ -30,7 +30,7 @@
 1. Apple App Store Icon
 1. Bug
 1. Cogs
-1. Download
+1. [x] Download - finished 18.1.2019.
 1. Bar Graph
 1. Javascript Logo
 1. [x] Angular Logo - finished 9.1.2019.
