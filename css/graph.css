@@ -184,3 +184,29 @@ p {
     bottom: 0%;
   }
 }
+
+@media all and (max-width:600px) and (min-width:400px) {
+  .box {
+    height: 400px;
+    width: 400px;
+  }
+
+  .skill-name:nth-of-type(10):before {
+    content: "md";
+  }
+}
+
+@media all and (max-width:400px) {
+  .box {
+    height: 250px;
+    width: 250px;
+  }
+
+  .skill-name {
+    font-size: 0.5em;
+  }
+
+  .skill-name:nth-of-type(10):before {
+    content: "md";
+  }
+}
