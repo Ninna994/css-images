@@ -1,4 +1,4 @@
-# My attempt of creating all 50 images from #dailycssimages challenge.
+# My attempt of creating all 50 images from #dailycssimages challenge
 
 ## Challenges
 
@@ -10,7 +10,7 @@
 1. [x] Clock - finished 5.1.2019.
 1. [x] Ruler - finished 8.1.2019.
 1. [x] Notebook - finished 11.1.2019.
-1. [x] Calendar - finished 12.1.2019. 
+1. [x] Calendar - finished 12.1.2019.
 1. [x] Pencil Jar -finished 12.1.2019.
 1. Pizza
 1. Hamburger
@@ -32,7 +32,7 @@
 1. Cogs
 1. [x] Download - finished 18.1.2019.
 1. [x] Bar Graph - finished 18.1.2019.
-1. Javascript Logo
+1. [x] Javascript Logo -finished 19.1.2019.
 1. [x] Angular Logo - finished 9.1.2019.
 1. [x] Vue JS Logo -finished 9.1.2019.
 1. [x] React Logo - finished 9.1.2019.

@@ -1,0 +1,56 @@
+:root {
+  --background: white;
+  --yellow: #F0DB4F;
+  --black: #323330;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background);
+  font-family: 'Source Sans Pro';
+}
+
+p {
+  margin-top: 5vh;
+  color: var(--black);
+  text-transform: capitalize;
+  font-size: 2em;
+  text-align: center;
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: box;
+  margin: 5% auto auto auto;
+  background-color: var(--yellow);
+}
+
+.box::after {
+  content: 'js';
+  position: absolute;
+  font-size: 8em;
+  line-height: .8;
+  color: var(--black);
+  letter-spacing: -10px;
+  text-transform: uppercase;
+  right: 3%;
+  bottom: 0;
+}
+
+@media all and (max-width: 300px) {
+  .box {
+    width: 150px;
+    height: 150px;
+  }
+
+  .box::after {
+    font-size: 6em;
+    right: 5%;
+  }
+}
