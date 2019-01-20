@@ -26,8 +26,8 @@
 1. Green Lantern
 1. Wolverine
 1. Iron Man
-1. Captain America
-1. Apple App Store Icon
+1. [x] Captain America - finished 20.1.2019.
+1. [x] Apple App Store Icon - finished 20.1.2019.
 1. Bug
 1. Cogs
 1. [x] Download - finished 18.1.2019.

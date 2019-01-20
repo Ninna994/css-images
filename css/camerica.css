@@ -1,0 +1,91 @@
+:root {
+  --background: white;
+  --red: #B3221B;
+  --metal: #686767;
+  --blue: #0059AC;
+  --star: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway';
+}
+
+p {
+  margin-top: 5vh;
+  color: var(--black);
+  text-transform: capitalize;
+  font-size: 2em;
+  text-align: center;
+}
+
+.box {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: box;
+  margin: 5% auto auto auto;
+}
+.red,
+.red:nth-of-type(3){
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--red);
+  /* box-shadow: inset 0 0 10px black; */
+  box-shadow: inset 0px 0px 129px 4px rgba(0, 0, 0, 0.63);
+}
+.red:nth-of-type(3) {
+  width: 60%;
+  height: 60%;
+  z-index: 3;
+  left: 20%;
+  top: 20%;
+  /* box-shadow: inset 0 0 10px black; */
+  box-shadow: inset 0px 0px 129px 4px rgba(0, 0, 0, 0.63);
+}
+.silver{
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background:  white;
+  left: 10%;
+  top: 10%;
+  z-index: 1;
+  /* box-shadow: inset 0 0 10px black; */
+  box-shadow: inset 0px 0px 129px 4px rgba(0, 0, 0, 0.63);
+}
+.blue{
+position: absolute;
+width: 40%;
+height: 40%;
+border-radius: 50%;
+background-color: var(--blue);
+z-index: 3;
+left: 30%;
+top: 30%;
+/* box-shadow: inset 0 0 10px black; */
+box-shadow: inset 0px 0px 129px 4px rgba(0, 0, 0, 0.63);
+}
+.star{
+  position: absolute;
+  clip-path: var(--star);
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  
+}
+@media all and (max-width:500px) {
+  .box {
+    height: 300px;
+    width: 300px;
+  }
+
+}

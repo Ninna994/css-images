@@ -1,0 +1,83 @@
+:root {
+  --background: white;
+  --light: #15C7FA;
+  --dark: #2C73D8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway';
+}
+
+p {
+  margin-top: 5vh;
+  color: var(--black);
+  text-transform: capitalize;
+  font-size: 2em;
+  text-align: center;
+}
+
+.box {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: box;
+  margin: 5% auto auto auto;
+  background-image: linear-gradient(135deg, var(--light), var(--dark));
+  border-radius: 25%;
+}
+
+.line,
+.line2,
+.line3 {
+  position: absolute;
+  width: 10%;
+  height: 80%;
+  top: 10%;
+  left: 35%;
+  background-color: #fff;
+  border-radius: 25%;
+  transform: rotate(30deg);
+  border: .5px solid grey;
+  z-index: 3;
+}
+
+.line2 {
+  left: 60%;
+  transform: rotate(-30deg);
+  z-index: 2;
+}
+
+.line3 {
+  left: 45%;
+  top: 20%;
+  transform: rotate(90deg);
+  z-index: 1;
+}
+
+.line3-copy {
+  position: absolute;
+  width: 8%;
+  height: 40%;
+  left: 27%;
+  top: 40.3%;
+  background-color: #fff;
+  transform: rotate(90deg);
+  border-bottom-left: 1px solid grey;
+  border-bottom-right: 1px solid grey;
+  border-radius: 25%;
+  z-index: 4;
+}
+
+@media all and (max-width: 350px) {
+  .box {
+    width: 150px;
+    height: 150px;
+  }
+
+
+}
