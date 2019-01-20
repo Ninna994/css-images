@@ -1,18 +1,18 @@
 :root {
-  --background: #94AEFF;
-  --jar: #000F3D;
-  --red: #ED6353;
-  --blue: #136AD4;
-  --body: #CCB38C;
-  --yellow: #F2C975;
+  --background: #94aeff;
+  --jar: #000f3d;
+  --red: #ed6353;
+  --blue: #136ad4;
+  --body: #ccb38c;
+  --yellow: #f2c975;
   --green: #008773;
-  --text: #1C3341;
-  --rose: #D16D6B;
-  --gold: #DAA520;
-  --orange: #D17810;
-  --magenta: #CA18D1;
-  --purple: #5533D1;
-  --sky: #0CBAE8;
+  --text: #1c3341;
+  --rose: #d16d6b;
+  --gold: #daa520;
+  --orange: #d17810;
+  --magenta: #ca18d1;
+  --purple: #5533d1;
+  --sky: #0cbae8;
   --triangle: polygon(50% 100%, 0 0, 100% 0);
 }
 
@@ -30,8 +30,7 @@ p {
   text-align: center;
   color: var(--text);
   text-transform: capitalize;
-  text-align: center;
-  font-family: 'Segoe UI';
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 2em;
 }
@@ -39,7 +38,7 @@ p {
 h3 {
   color: var(--text);
   text-align: center;
-  font-family: 'Segoe UI';
+  font-family: "Segoe UI";
   font-weight: 400;
 }
 
@@ -92,6 +91,7 @@ h3 {
   height: 90%;
   left: 29%;
 }
+
 .eraser {
   position: absolute;
   width: 15%;
@@ -115,11 +115,14 @@ h3 {
   background: var(--blue);
   border-top: 1px solid black;
 }
+
 .pencil {
   position: absolute;
   height: 80%;
   width: 5%;
   border-radius: 20%;
+  /*   border: 0.5px solid black; */
+  /*   border-bottom: 0 solid black; */
 }
 
 .tip {
@@ -160,7 +163,6 @@ h3 {
   background: var(--green);
   left: 70%;
   top: 14%;
-  z-index: -1;
   transform: rotateZ(-10deg);
   z-index: -2;
 }
@@ -252,7 +254,8 @@ h3 {
 .pencil:nth-child(10) .tip {
   border-bottom-color: var(--sky);
 }
-@media all and (max-width:600px) {
+
+@media all and (max-width: 600px) {
   .box {
     width: 500px;
     height: 400px;

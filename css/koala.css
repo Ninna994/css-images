@@ -19,20 +19,16 @@ body {
   width: 600px;
   height: 420px;
   background: none;
-  /* border: 3px solid white; */
 }
 
 .head {
   position: absolute;
   top: 16.5%;
-  /* centriranje (100-sirina)/2*/
   left: 25%;
-  /*centriranje (100-visina)/2*/
   width: 50%;
   height: 67%;
   background: var(--light_grey);
   border-radius: 50%;
-  /*da bi dobili krug*/
 }
 
 .head-copy {
@@ -42,7 +38,6 @@ body {
   background: var(--light_grey);
   border-radius: 50%;
   z-index: 2;
-  /*da bi usi smestili iza nje*/
 }
 
 .ear-left {
@@ -54,7 +49,6 @@ body {
   border-radius: 50%;
   background: var(--light_grey);
   z-index: 1;
-  /* animation: spinMe 3s infinite; */
   animation: dragLeft 3s 3;
 }
 
@@ -67,8 +61,6 @@ body {
   border-radius: 50%;
   background: var(--light_grey);
   z-index: 1;
-  /*animations koja koliko sek koliko iteracija*/
-  /* animation: spinMe 3s infinite; */
   animation: dragRight 3s 3;
 }
 
@@ -90,7 +82,6 @@ body {
   height: 33%;
   border-radius: 50%;
   z-index: 3;
-  /*iznad svega*/
   background: white;
 }
 
@@ -102,7 +93,6 @@ body {
   height: 33%;
   border-radius: 50%;
   z-index: 2;
-  /*iznad svega*/
   background: white;
 }
 
@@ -147,17 +137,14 @@ body {
   clip-path: var(--triangle);
 }
 
-/*CSS animations*/
 @keyframes spinMe {
   0% {
     transform: rotate(0deg);
-    /*change colors*/
     background: var(--light_grey);
   }
 
   100% {
     transform: rotate(360deg);
-    /*change colors*/
     background: var(--dark_grey);
   }
 }

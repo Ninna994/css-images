@@ -16,16 +16,14 @@
 body {
   background-image: linear-gradient(to bottom right, var(--from), var(--to));
   background-repeat: no-repeat;
-  height: 95vh;
+  height: 100vh;
 }
 
 h1 {
   text-align: center;
-  margin-top: 5vh;
   color: var(--letter);
   text-transform: capitalize;
   text-shadow: -2px 2px black;
-  font-family: 'Josefin Sans', sans-serif;
 }
 
 .box {
@@ -62,7 +60,6 @@ h1 {
   position: absolute;
   width: 70%;
   height: 70%;
-  left: 10%;
   top: 15%;
   left: 18%;
   color: white;

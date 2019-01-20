@@ -67,8 +67,6 @@ p {
   top: 40.3%;
   background-color: #fff;
   transform: rotate(90deg);
-  border-bottom-left: 1px solid grey;
-  border-bottom-right: 1px solid grey;
   border-radius: 25%;
   z-index: 4;
 }

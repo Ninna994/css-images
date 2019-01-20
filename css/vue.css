@@ -22,9 +22,7 @@ body {
 p {
   margin-top: 5vh;
   text-align: center;
-  color: var(--to);
   text-transform: capitalize;
-  text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   color: var(--text);
@@ -36,7 +34,7 @@ p {
   width: 500px;
   height: 450px;
   display: box;
-  margin: 15% auto auto auto;
+  margin: 8% auto auto auto;
   background: var(--body);
 }
 
