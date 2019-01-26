@@ -1,5 +1,6 @@
 :root {
   --white: white;
+  --background: rgba(204, 145, 118, 0.897);
 }
 
 * {
@@ -10,10 +11,13 @@
 
 body {
   font-family: 'Raleway';
+  background-color: var(--background);
 }
-html{
+
+html {
   font-size: 10px;
 }
+
 p {
   margin-top: 5vh;
   text-transform: capitalize;
@@ -27,11 +31,10 @@ p {
   height: 50rem;
   display: box;
   margin: 5% auto auto auto;
-  border: 1px solid #000;
-  background-color: tomato;
   z-index: -2;
 }
-.screen{
+
+.screen {
   position: absolute;
   width: 70%;
   height: 50%;
@@ -39,9 +42,12 @@ p {
   top: 15%;
   border: 1px solid #000;
   background-color: rgb(58, 55, 55);
+
+
 }
-.screen::after{
-  background-color: white;
+
+.screen::after {
+  background-color: #fff;
   content: '';
   position: absolute;
   width: 110%;
@@ -51,4 +57,122 @@ p {
   z-index: -1;
   border-top-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
+  box-shadow: inset 2px 0px 43px -9px rgba(0, 0, 0, 0.75);
+}
+
+.camera {
+  position: absolute;
+  left: 47.5%;
+  top: -8%;
+  width: 5%;
+  height: 7%;
+  background: lightgray;
+  border-radius: 50%;
+}
+
+.camera::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 25%;
+  top: 25%;
+  background-color: rgba(128, 128, 128, 0.664);
+  border-radius: 50%;
+}
+
+.base {
+  position: absolute;
+  width: 90%;
+  height: 10%;
+  background-color: #fff;
+  top: 70%;
+  left: 5%;
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  box-shadow: inset 8px 0px 43px -9px rgba(0, 0, 0, 0.753);
+}
+
+.window {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  background-color: rgb(255, 255, 255);
+  left: 20%;
+  top: 20%;
+}
+
+.window::before {
+  content: "";
+  position: absolute;
+  background-color: lightgrey;
+  width: 100%;
+  height: 7%;
+}
+
+.window::after {
+  content: 'X';
+  font-weight: bold;
+  position: absolute;
+  right: 2%;
+}
+
+.field {
+  position: absolute;
+  width: 90%;
+  height: 30%;
+  top: 35%;
+  left: 5%;
+}
+
+.field::before {
+  position: absolute;
+  content: "echo ('Hello World');";
+  font-weight: bold;
+  /* text-align: center; */
+  left: 20%;
+  font-size: 1.5em;
+}
+
+.cursor {
+  position: absolute;
+  background-color: grey;
+  height: 40%;
+  width: 1%;
+  right: 15%;
+  animation: fade .6s linear infinite;
+}
+
+@media all and (max-width:600px) {
+  .box {
+    width: 400px;
+    height: 400px;
+    display: box;
+  }
+
+  body {
+    font-size: 7px;
+  }
+}
+
+@media (max-width:400px) {
+  .box {
+    width: 200px;
+    height: 200px;
+    display: box;
+  }
+
+  body {
+    font-size: 5px;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
