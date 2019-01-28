@@ -38,7 +38,7 @@
 1. [x] React Logo - finished 9.1.2019.
 1. [x] Elm Logo - finished 14.1.2019.
 1. Cell Phone
-1. [x] Laptop - finished 26.1.2019. 
+1. [x] Laptop - finished 26.1.2019.
 1. External Monitor
 1. Keyboard
 1. Nintendo 2DS
