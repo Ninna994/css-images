@@ -40,7 +40,7 @@
 1. Cell Phone
 1. [x] Laptop - finished 26.1.2019.
 1. External Monitor
-1. Keyboard
+1. [x] Keyboard -finished 04.2.2019.
 1. Nintendo 2DS
 1. Mascot for Start-up
 1. Critter
