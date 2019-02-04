@@ -7,6 +7,7 @@ body {
   background-image: linear-gradient(to bottom right, rgb(59, 147, 150), rgb(167, 167, 45));
   background-repeat: no-repeat;
   height: 100vh;
+  max-height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1em;
 }
