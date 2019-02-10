@@ -1,6 +1,6 @@
 # My attempt of creating all 50 images from #dailycssimages challenge
 
-## Challenges
+## Challenges i completed
 
 1. [x] Bear Cub -finished 5.1.2019.
 1. Elephant
