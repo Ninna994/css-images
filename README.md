@@ -50,7 +50,7 @@
 1. Pinata
 1. [x] Cake -finished 18.1.2019.
 1. Craft Beer
-1. Dance Dance Revolution Mat
+1. [x] Dance Dance Revolution Mat
 1. Party City
 
 To access my code on **codepen** collection with all images follow [this link][link].
