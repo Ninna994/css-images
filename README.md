@@ -3,7 +3,7 @@
 ## Challenges i completed
 
 1. [x] Bear Cub -finished 5.1.2019.
-1. Elephant
+1. [x] Elephant - finished 17.2.2019.
 1. Beaver
 1. Tiger
 1. Favorite Animated Animal
@@ -50,7 +50,7 @@
 1. Pinata
 1. [x] Cake -finished 18.1.2019.
 1. Craft Beer
-1. [x] Dance Dance Revolution Mat
+1. [x] Dance Dance Revolution Mat - finished 16.2.2019.
 1. Party City
 
 To access my code on **codepen** collection with all images follow [this link][link].

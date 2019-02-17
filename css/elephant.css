@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway';
+  background-color: rgba(131, 184, 197, 0.897);
+}
+
+p {
+  margin-top: 2vh;
+  text-transform: capitalize;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(255, 113, 113);
+  font-weight: 600;
+  text-shadow: 1px 1px black;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  display: box;
+  margin: 3% auto auto auto;
+}
+.trunk-tip{
+  position: absolute;
+  background: rgb(138, 137, 137);
+  left: 48%;
+  top:75%;
+  width: 5%;
+  height: 10%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 35px;
+  border-top-left-radius: 35px;
+  transform: rotate(-25deg);
+  background: grey;
+}
+.trunk{
+  background: grey;
+  position: absolute;
+  top: 67%;
+  left: 47%;
+  width: 5%;
+  height: 13%;
+  border-bottom-right-radius: 35px;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
+.body{
+  position: absolute;
+  width: 70%;
+  height: 80%;
+  bottom: 0%;
+  left: 15%;
+}
+.head-big{
+  position: absolute;
+  width: 45%;
+  height: 35%;
+  border-radius: 50%;
+  background: grey;
+  left: 27.5%;
+  top: 20%;
+}
+.ear-left,
+.ear-right{
+  position: absolute;
+  width: 80%;
+  height: 90%;
+  border-radius: 50%;
+  background: rgb(138, 137, 137);
+  z-index: -1;
+}
+.ear-left{
+  left: -50%;
+}
+.ear-right{
+  right: -50%;
+}
+.inside{
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: rgb(168, 168, 168);
+  left: 5%;
+  top: 5%;
+}
+.head-small{
+  position: absolute;
+  width: 35%;
+  height: 25%;
+  border-radius: 50%;
+  background: grey;
+  left: 32.5%;
+  top: 37%;
+}
+.eye-left,
+.eye-right{
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  background: black;
+  border-radius: 50%;
+  top: 35%;
+}
+.eye-left{
+  left: 20%;
+}
+.eye-right{
+  right: 20%;
+}
+.arm-left,
+.arm-right{
+  position: absolute;
+  height: 40%;
+  width: 20%;
+  background: rgb(121, 120, 120);
+  top: 50%;
+  z-index: -1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.arm-left{
+  left: 30%;
+  box-shadow: -5px 0px 1px  rgb(105, 105, 105);
+}
+.arm-right{
+  right: 30%;
+  box-shadow: 5px 0px 1px  rgb(105, 105, 105);
+}
+.leg-left,
+.leg-right{
+  position: absolute;
+  width: 17%;
+  height: 20%;
+  border-radius: 50%;
+  background: rgb(168, 168, 168);
+  top: 72%;
+}
+.leg-left{
+  left: 26%;
+  transform: rotate(-20deg);
+  box-shadow: 5px 0px 1px  rgb(105, 105, 105);
+}
+.leg-right{
+  right: 26%;
+  transform: rotate(20deg);
+  box-shadow: -5px 0px 1px  rgb(105, 105, 105);
+}
+.heart{
+  position: absolute;
+  top: 17%;
+  left: 40%;
+  width: 20%;
+  height: 20%;
+}
+.left,
+.right{
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  background: rgb(223, 37, 37);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.left{
+  left: 10%;
+  transform: rotate(-60deg);
+}
+.right{
+  right: 10%;
+  transform: rotate(60deg);
+}
+.heart{
+  animation: 1s tic ease infinite;
+}
+@keyframes tic{
+  0%{
+    transform: scale(.8);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(.8);
+  }
+}
+@media all and (max-width:600px) {
+  .box {
+    height: 400px;
+    width: 300px;
+  }
+  .heart{
+    width: 30%;
+    height: 30%;
+    top: 25%;
+  }
+  .left,
+  .right{
+    width: 20%;
+    height: 20%;
+  }
+  .left{
+    left: 20%;
+  }
+  
+  .right{
+    right: 45%;
+  }
+}
