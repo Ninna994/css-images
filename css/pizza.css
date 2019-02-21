@@ -4,7 +4,6 @@
   --crust: #D19952;
   --peperoni: #A2371D;
   --olive: #1D1D1D;
-  --ham: #EEBABE;
 
 }
 
@@ -142,7 +141,8 @@ p {
   border-radius: 50%;
   overflow: hidden;
 }
-.peperoni{
+
+.peperoni {
   position: absolute;
   width: 25%;
   height: 30%;
@@ -158,6 +158,7 @@ p {
   top: 10%;
   left: 35%;
 }
+
 .p-2 {
   top: 38%;
   right: 16%;
@@ -167,7 +168,8 @@ p {
   bottom: 10%;
   left: 26%;
 }
-.olive{
+
+.olive {
   position: absolute;
   width: 8%;
   height: 10%;
@@ -175,6 +177,7 @@ p {
   border-radius: 50%;
 
 }
+
 .o-1 {
   top: 10%;
   left: 24%;
@@ -283,4 +286,13 @@ p {
 }
 
 
+@media all and (max-width:200px) {
+  .box {
+    width: 100px;
+    height: 100px;
+  }
 
+  p {
+    font-size: 2em;
+  }
+}
