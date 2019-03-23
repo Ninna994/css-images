@@ -12,7 +12,7 @@
 1. [x] Notebook - finished 11.1.2019.
 1. [x] Calendar - finished 12.1.2019.
 1. [x] Pencil Jar -finished 12.1.2019.
-1. Pizza
+1. [x] Pizza - finished 23.2.2019.
 1. Hamburger
 1. Taco
 1. Cheesecake
@@ -28,7 +28,7 @@
 1. Iron Man
 1. [x] Captain America - finished 20.1.2019.
 1. [x] Apple App Store Icon - finished 20.1.2019.
-1. Bug
+1. [] Bug 
 1. Cogs
 1. [x] Download - finished 18.1.2019.
 1. [x] Bar Graph - finished 18.1.2019.
