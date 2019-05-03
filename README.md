@@ -28,7 +28,7 @@
 1. Iron Man
 1. [x] Captain America - finished 20.1.2019.
 1. [x] Apple App Store Icon - finished 20.1.2019.
-1. [] Bug 
+1. [x] Bug - finished 3.5.2019.
 1. Cogs
 1. [x] Download - finished 18.1.2019.
 1. [x] Bar Graph - finished 18.1.2019.
